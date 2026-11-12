@@ -42,12 +42,12 @@ const PartnershipsSection = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="bg-secondary rounded-lg border border-accent-subtle p-8 flex items-center justify-center hover:shadow-glow transition-shadow"
+              className="bg-secondary rounded-lg border border-accent-subtle p-4 h-40 md:h-52 flex items-center justify-center hover:shadow-glow transition-shadow"
             >
               <img
                 src={brand.logo}
                 alt={brand.name}
-                className="max-h-16 md:max-h-20 w-auto object-contain rounded-md"
+                className="w-full h-full object-contain rounded-md"
               />
             </motion.div>
           ))}
