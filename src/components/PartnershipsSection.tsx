@@ -3,12 +3,16 @@ import atecLogo from "@/assets/atec.png";
 import hardtLogo from "@/assets/hardt.png";
 import trattoLogo from "@/assets/tratto.png";
 import threeheadsLogo from "@/assets/threeheads.png";
+import projecaoLogo from "@/assets/moto-parts.jpeg";
+import bateriaHaizerLogo from "@/assets/battery-haizer.png";
 
 const brands = [
   { name: "ATEC", logo: atecLogo },
   { name: "HARDT", logo: hardtLogo },
   { name: "TRATTO PARTS", logo: trattoLogo },
   { name: "THREEHEADS", logo: threeheadsLogo },
+  { name: "PROJEÇÃO", logo: projecaoLogo },
+  { name: "BATERIA HAIZER", logo: bateriaHaizerLogo },
 ];
 
 const PartnershipsSection = () => {
@@ -30,7 +34,7 @@ const PartnershipsSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {brands.map((brand, i) => (
             <motion.div
               key={brand.name}
@@ -43,7 +47,7 @@ const PartnershipsSection = () => {
               <img
                 src={brand.logo}
                 alt={brand.name}
-                className="max-h-16 md:max-h-20 w-auto object-contain"
+                className="max-h-16 md:max-h-20 w-auto object-contain rounded-md"
               />
             </motion.div>
           ))}
